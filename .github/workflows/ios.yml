@@ -1,0 +1,27 @@
+name: iOS
+
+on: [push]
+
+jobs:
+  build:
+    name: ${{ matrix.config.name }}
+    runs-on: ${{ matrix.config.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - { name: "macOS", os: macos-latest, target: "ios" }
+        python-version: [3.7]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: First attempt
+        run: |
+          pod install --verbose
+          make test
+
+      - name: Second attempt
+        run: |
+          pod install --verbose
+          make test

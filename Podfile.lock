@@ -1,0 +1,29 @@
+PODS:
+  - Protobuf (3.21.5)
+  - ub-google-cast-sdk-no-bluetooth (4.7.1):
+    - Protobuf (~> 3.0)
+
+DEPENDENCIES:
+  - ub-google-cast-sdk-no-bluetooth (from `https://github.com/ubook-editora/ub-google-cast-sdk-no-bluetooth.git`, branch `main`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Protobuf
+
+EXTERNAL SOURCES:
+  ub-google-cast-sdk-no-bluetooth:
+    :branch: main
+    :git: https://github.com/ubook-editora/ub-google-cast-sdk-no-bluetooth.git
+
+CHECKOUT OPTIONS:
+  ub-google-cast-sdk-no-bluetooth:
+    :commit: 32fe2df9a29eda204b63ce99dd4b5d908bb415b9
+    :git: https://github.com/ubook-editora/ub-google-cast-sdk-no-bluetooth.git
+
+SPEC CHECKSUMS:
+  Protobuf: 7504b04fffcf6662ad629694db8231f5e744327f
+  ub-google-cast-sdk-no-bluetooth: 88a6f7cc45694f4283a578aa81e94fced571aacc
+
+PODFILE CHECKSUM: 8d018955dbd493f806d8a84ab11d2c4cbb10b2a9
+
+COCOAPODS: 1.11.3
